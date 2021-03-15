@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="23dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/Edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Enter First Number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_below="@id/Edit1"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Enter Second Number"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Spinner"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Result" />
+
+    <Spinner
+        android:id="@+id/Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Edit2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="45dp" />
+
+    <Button
+        android:id="@+id/RESULTS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="46dp"
+        android:text="Calculate" />
+
+</RelativeLayout>
